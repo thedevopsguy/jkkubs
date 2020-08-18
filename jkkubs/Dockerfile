@@ -3,7 +3,7 @@ WORKDIR /app
 EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
-WORKDIR /jkkubs
+WORKDIR /
 COPY ["jkkubs/jkkubs.csproj", "jkkubs/"]
 
 RUN dotnet restore "jkkubs/jkkubs.csproj"
